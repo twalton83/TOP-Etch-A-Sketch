@@ -1,21 +1,74 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 80vh;
-    width: 80vw;
-    background-color: white;
-    margin: 0 auto;
-    border: 2px solid black;
-}
 
 body{
     background-color: cornflowerblue;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
     font-family: sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
+    border-bottom: 2px solid lightskyblue;
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+label{
+    font-family: sans-serif;
+}
+
+#container{
+    display: grid;
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    border: 5px solid darkblue;
+}
+
+
+.gridItem{
+    height: 100%;
+    width: 100%;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputSection{
+    display: flex;
+    flex-direction: column; 
+    margin-right: 10rem;
+    padding: 10px;
+   height: auto;
+   background-color: lightslategray;
+   box-shadow: 0px 3px 5px 0px rgba(0,0,0,.3)
+}
+button{
+    height: 3rem;
+    width: 5rem;
+    margin: 1rem;
+    align-self: center;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1rem;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,.3)
+}
+
+#create{
+    background-color: green;
+}
+#clear{
+    background-color: darkred;
+}
+
+button:hover{
+    transform: scale(1.1);
 }
