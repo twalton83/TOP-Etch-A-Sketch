@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 80vh;
+    width: 80vw;
+    background-color: white;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+body{
+    background-color: cornflowerblue;
+    
+}
+
+h1{
+    font-family: sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
