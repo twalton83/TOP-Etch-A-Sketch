@@ -4,9 +4,11 @@ const clearButton = document.querySelector('.clear')
 let input = document.querySelector('input')
 let color = changeColors()
 
+window.onload = createGrid
+
 function createGrid(){
     if(container.firstElementChild){while(container.firstElementChild){container.removeChild(container.firstElementChild)}}
-    columns = input.value
+    let columns = input.value
     container.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${columns}, 1fr)`;
     container.style.gridGap = '1px'
@@ -19,6 +21,7 @@ function createGrid(){
         container.appendChild(div)
     }
 }
+
 
 function clearGrid(){
     //while firstElementChild exists, remove it
